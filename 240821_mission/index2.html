@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>정보 입력</legend>
+        <p>
+          이름:
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="이름입력"
+          />
+        </p>
+        <p>
+          성별:
+          <input type="radio" name="gender" id="gen1" value="man" />
+          <label for="gen1">남</label>
+          <input type="radio" name="gender" id="gen2" value="woman" />
+          <label for="gen2">여</label>
+        </p>
+        <p>
+          기술:
+          <input type="checkbox" name="skill" id="skill1" value="html" />
+          <label for="skill1">HTML</label>
+          <input type="checkbox" name="skill" id="skill2" value="css" />
+          <label for="skill2">CSS</label>
+          <input type="checkbox" name="skill" id="skill3" value="js" />
+          <label for="skill3">JS</label>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

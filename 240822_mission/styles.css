@@ -1,0 +1,24 @@
+.a-button {
+  width: 100px;
+  background-color: rgb(20, 40, 192);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: opacity 0.15s, background-color 3s;
+}
+
+.a-button:hover {
+  opacity: 0.8;
+}
+
+.a-button:active {
+  opacity: 0.1;
+  background-color: black;
+}

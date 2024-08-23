@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동적웹페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      #button {
+        background-color: #4caf50;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>동적웹페이지</h2>
+
+    <button id="button">button</button>
+    <p id="name_txt"></p>
+    <script>
+      let button = document.getElementById("button");
+      button.addEventListener("click", () => {
+        let input = prompt("이름을 입력하세요.");
+        if (input === null || input.trim() === "") {
+          return;
+        }
+        let message = "안녕하세요, " + input + "님!";
+        let name_txt = document.getElementById("name_txt");
+        name_txt.textContent = message;
+      });
+    </script>
+  </body>
+</html>

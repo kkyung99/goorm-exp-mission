@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="checkbox"] + span {
+        color: lightgray;
+      }
+
+      input[type="checkbox"]:checked + span {
+        color: green;
+        font-weight: bold;
+      }
+
+      input:disabled {
+        background-color: lightgray;
+      }
+
+      input:enabled {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>가상 선택자</h2>
+    <label>
+      <input type="checkbox" />
+      <span>체크박스</span>
+    </label>
+    <br />
+    <br />
+    <input type="text" placeholder="활성화된 입력 필드" />
+    <input type="text" value="비활성화된 입력 필드" disabled />
+  </body>
+</html>

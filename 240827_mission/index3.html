@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 자손 선택자 > 를 사용한 경우에는 .parent의 직계 자식만 스타일 적용 */
+      .parent > p {
+        color: coral;
+        font-weight: bold;
+      }
+
+      /* 자손 선택자 >를 사용하지 않은 경우에는 .parent의 모든 하위 요소에 스타일 적용 */
+      /* .parent p {
+        color: pink;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <p>자식</p>
+      </div>
+      <p>부모</p>
+    </div>
+  </body>
+</html>
